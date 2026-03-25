@@ -97,3 +97,66 @@ li.is-open .submenu{
     cursor: pointer;
     margin-bottom: 15px;
 }
+
+/* footer */
+.typography-footer{
+    background-color: #B4D8EE;
+    color:#334EAC;
+    padding:60px 5% 20px 5%;
+    font-family: Verdana, sans-serif; 
+}
+
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap:40px;
+}
+
+.footer-website-name h2{
+    font-family: "Playfair Display", serif;
+    font-size: 5rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.footer-info{
+    display: flex;
+    gap:80px;
+}
+
+.footer-column h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column p {
+    max-width: 250px;
+    line-height: 1.4;
+    margin: 0;
+}
+.contact-link {
+    font-size: 1.8rem;
+    text-decoration: underline;
+    font-weight: 400;
+}
+.footer-bottom-section {
+    margin-top: 60px;
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+/* media query */
