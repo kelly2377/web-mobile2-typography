@@ -1,3 +1,13 @@
+:root {
+    --planetary: #334eac;
+    --universe: #7096d1;
+    --milkyway: #fff9f0;
+    --venus: #bad6e8;
+    --meteor: #f7f2eb;
+    --galaxy: #081f5c;
+    --sky: #d0e3ff;
+}
+
 ul {
     list-style: none;
     margin: 0;
@@ -7,12 +17,16 @@ ul {
 body{
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: #FFF9F0;
+    background: var(--milkyway);
 }
 
-a{
-    color:inherit;
+a {
+    color: var(--planetary);
     text-decoration: none;
+}
+
+nav a {
+    color: inherit;
 }
 
 nav#primary-nav{
@@ -96,6 +110,77 @@ li.is-open .submenu{
     padding: 8px 15px;
     cursor: pointer;
     margin-bottom: 15px;
+}
+
+/* main content */
+main {
+    margin: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+main > div {
+    margin: 0;
+    padding: 0;
+
+    max-width: 1000px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+main > div > section {
+    margin: 0;
+    padding: 10px;
+
+    background-color: var(--sky);
+    border-radius: 12px;
+}
+
+main > div > section.large {
+    grid-column: span 3;
+}
+
+main > div > section.medium {
+    grid-column: span 2;
+}
+
+main > div > section.small {
+    grid-column: span 1;
+}
+
+main > div > section h2 {
+    margin: 5px 0 0 0;
+}
+
+main > div > section p {
+    margin: 10px 0;
+}
+
+main > div > section > img {
+    border-radius: 12px;
+}
+
+main > div > section a.continue {
+    display: block;
+    text-align: right;
+}
+
+main img.left {
+    margin-right: 10px;
+
+    float: left;
+}
+
+main img.right {
+    margin-left: 10px;
+
+    float: right;
 }
 
 /* footer */
