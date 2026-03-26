@@ -5,6 +5,7 @@ ul {
 }
 
 body{
+    padding: 0;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: #FFF9F0;
@@ -13,6 +14,20 @@ body{
 a{
     color:inherit;
     text-decoration: none;
+}
+
+iframe {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+iframe.nav {
+    height: 178px;
+}
+
+iframe.footer {
+    height: 320px;
 }
 
 nav#primary-nav{
