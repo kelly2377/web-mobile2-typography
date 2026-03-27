@@ -50,7 +50,7 @@ nav#primary-nav{
 }
 
 .submenu-toggle::after{
-    content:' v';
+    content:'\2304';
     font-size: 0.8rem;
     margin-left: 10px;
     vertical-align: middle;
