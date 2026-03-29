@@ -1,4 +1,7 @@
-<?php include "assets/inc/head.php"; ?>
+<?php
+$currentPage = "Typography";
+include "assets/inc/head.php";
+?>
 <body>
     <!-- nav -->
     <?php include "assets/inc/nav.php"; ?>
