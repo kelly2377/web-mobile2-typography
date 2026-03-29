@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typography</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
+<?php include "assets/inc/head.php"; ?>
 <body>
     <!-- nav -->
     <?php include "assets/inc/nav.php"; ?>
