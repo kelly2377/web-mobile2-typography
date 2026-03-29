@@ -1,0 +1,50 @@
+<?php
+$currentPage = "Modern Research and Discoveries | History";
+include "assets/inc/head.php";
+?>
+<body>
+    <!-- nav -->
+    <?php include "assets/inc/nav.php"; ?>
+    
+    <!-- page info  -->
+    <main>
+        <div>
+            <section class="large">
+                <img class="left" src="assets/images/serifs.png">
+                <div>
+                    <h2>Sans-serifs</h2>
+                    <p>
+                        In the early 19th century, people began using fonts without serifs, known as sans-serif fonts.
+                        This style of font was better suited for attention-grabbing and general reading, so newspapers were quick to adopt it.
+                        Programmers also used it because of the low-resolution monitors.
+                    </p>
+                </div>
+            </seciton>
+        </div>
+
+        <div>
+            <section class="large">
+                <img class="right" src="assets/images/scriptfonts.png">
+                <div>
+                    <h2>Script fonts</h2>
+                    <p>
+                        Script fonts are a style that attempts to imitate handwriting.
+                    </p>
+                    <p>
+                        Many of these have been created with varying styles.
+                    </p>
+                    <p>
+                        You can even create a script font that looks like your handwriting if that's something that interests you!
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <?php include "assets/inc/footer.php"; ?>
+
+    <script src="assets/js/menu.js"></script>
+    
+</body>
+</html>

@@ -143,6 +143,7 @@ main > div {
     padding: 0;
 
     max-width: 1000px;
+    width: 100%;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
