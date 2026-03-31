@@ -5,7 +5,7 @@
     </button>
     <ul id="primary-nav-list" class="main-menu">
         <li <?php if ($currentPage == "Typography") { echo 'class="is-current"'; } ?>>
-            <a href="/">Home</a>
+            <a href="index.html">Home</a>
         </li>
 
         <li>
@@ -13,8 +13,8 @@
                 History
             </button>
             <ul id="submenu-history" class="submenu">
-                <li <?php if ($currentPage == "Modern Research & Discoveries | History") { echo 'class="is-current"'; } ?>><a href="#">Origins & Evolution</a></li>
-                <li><a href="modern-research-discoveries.php">Modern Research & Discoveries</a></li>
+                <li><a href="#">Origins & Evolution</a></li>
+                <li <?php if ($currentPage == "Modern Research & Discoveries") { echo 'class="is-current"'; } ?>><a href="modern-research-discoveries.php">Modern Research & Discoveries</a></li>
             </ul>
         </li>
 

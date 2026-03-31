@@ -128,6 +128,10 @@ li.is-open .submenu{
     margin-bottom: 15px;
 }
 
+nav li.is-current a {
+    background-color: var(--universe);
+}
+
 /* main content */
 main {
     margin: 20px 0;

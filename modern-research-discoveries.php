@@ -5,7 +5,7 @@ include "assets/inc/head.php";
 <body>
     <!-- nav -->
     <?php
-    $currentPage = "Modern Research & Discoveries | History";
+    $currentPage = "Modern Research & Discoveries";
     include "assets/inc/nav.php";
     ?>
     
