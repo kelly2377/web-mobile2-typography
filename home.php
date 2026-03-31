@@ -4,7 +4,10 @@ include "assets/inc/head.php";
 ?>
 <body>
     <!-- nav -->
-    <?php include "assets/inc/nav.php"; ?>
+    <?php
+    $currentPage = "Typography";
+    include "assets/inc/nav.php";
+    ?>
     
     <!-- page info  -->
     <main>
