@@ -292,13 +292,14 @@ main img.right {
     main img.left, main img.right {
         float: none;
         width: 100%;
+        
+        margin-left: 0px;
+        margin-right: 10px;
     }
 
     .footer-container{
         flex-direction: column;
         align-items: center;
-
-
     }
 
     .footer-info{
@@ -307,6 +308,6 @@ main img.right {
     }
 
     .footer-column {
-        width: 100%;
+        width: 100%; /* I know, evil, sorry */
     }
 }
