@@ -1,11 +1,11 @@
 <nav id="primary-nav" aria-label="Primary">
-    <h1 class="nav-title">Typography</h1>
+    <h1 class="nav-title"><?php echo $currentPage; ?></h1>
     <button id="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav-list">
         Menu
     </button>
     <ul id="primary-nav-list" class="main-menu">
-        <li>
-            <a href="home.php">Home</a>
+        <li <?php if ($currentPage == "Typography") { echo 'class="is-current"'; } ?>>
+            <a href="index.html">Home</a>
         </li>
 
         <li>
@@ -14,7 +14,7 @@
             </button>
             <ul id="submenu-history" class="submenu">
                 <li><a href="#">Origins & Evolution</a></li>
-                <li><a href="#">Modern Research & Discoveries</a></li>
+                <li <?php if ($currentPage == "Modern Research & Discoveries") { echo 'class="is-current"'; } ?>><a href="modern-research-discoveries.php">Modern Research & Discoveries</a></li>
             </ul>
         </li>
 

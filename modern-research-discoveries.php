@@ -1,10 +1,13 @@
 <?php
-$currentPage = "Modern Research and Discoveries | History";
+$currentPage = "Modern Research & Discoveries | History";
 include "assets/inc/head.php";
 ?>
 <body>
     <!-- nav -->
-    <?php include "assets/inc/nav.php"; ?>
+    <?php
+    $currentPage = "Modern Research & Discoveries";
+    include "assets/inc/nav.php";
+    ?>
     
     <!-- page info  -->
     <main>

@@ -9,7 +9,10 @@
 }
 
 html {
+    width: 100%;
     height: 100%;
+
+    min-width: 400px;
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -31,6 +34,7 @@ ul {
 
 body{
     margin: 0;
+    width: 100%;
     height: 100%;
 
     background: var(--milkyway);
@@ -67,7 +71,7 @@ nav#primary-nav{
     gap: 15px;
 }
 
-.main-menu > li > a, .submenu-toggle{
+.main-menu > li > a, .submenu-toggle {
     display: inline-block;
     background: white;
     padding: 10px 25px;
@@ -126,11 +130,21 @@ li.is-open .submenu{
     padding: 8px 15px;
     cursor: pointer;
     margin-bottom: 15px;
+
+    font-weight: 700;
+    font-size: 0.95rem;
+    border:none;
+    font-family: inherit;
+    text-align: center;
+}
+
+nav li.is-current a {
+    background-color: var(--universe);
 }
 
 /* main content */
 main {
-    margin: 20px 0;
+    margin: 20px;
 
     display: flex;
     flex-direction: column;
@@ -219,7 +233,7 @@ main img.right {
 
 .footer-website-name h2{
     font-family: "Playfair Display", serif;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 400;
     margin: 0;
 }
@@ -262,3 +276,38 @@ main img.right {
 }
 
 /* media query */
+
+@media (max-width: 800px) {
+    main > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #menu-button {
+        display: inline;
+    }
+
+    main img.left, main img.right {
+        float: none;
+        width: 100%;
+        
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-info{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%; /* I know, evil, sorry */
+    }
+}
