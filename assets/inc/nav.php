@@ -5,7 +5,7 @@
     </button>
     <ul id="primary-nav-list" class="main-menu">
         <li>
-            <a href="#">Home</a>
+            <a href="home.php">Home</a>
         </li>
 
         <li>
@@ -23,8 +23,8 @@
                 Fundamentals
             </button>
             <ul id="submenu-fundamentals" class="submenu">
-                <li><a href="#">Typographic Elements</a></li>
-                <li><a href="#">Principles of Typography</a></li>
+                <li><a href="typographical_elements.php">Typographic Elements</a></li>
+                <li><a href="principles.php">Principles of Typography</a></li>
             </ul>
         </li>
 

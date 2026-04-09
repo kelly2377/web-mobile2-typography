@@ -11,6 +11,7 @@
                     <li><a href="#">History</a></li>
                     <li><a href="#">Typographers</a></li>
                     <li><a href="#">Fundamentals</a></li>
+                    <li><a href="#">Usage</a></li>
                 </ul>
             </div>
             <div class="footer-column">
