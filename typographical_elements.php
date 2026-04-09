@@ -12,6 +12,7 @@ include "assets/inc/head.php";
         
         <div>
             <section class="large">
+                <img class="right" src="assets/images/fonts-typefaces-2.png" alt="">
                 <div>
                     <h3>Fonts & Typefaces</h3>
 
@@ -23,13 +24,12 @@ include "assets/inc/head.php";
                         Your choice of font and typeface shapes how users perceive your brand. Whether you want a casual or sleek look, they should align with and reinforce your brand's personality. 
                     </p>
                 </div>
-
-                <img src="assets/images/fonts-typefaces-2.png" alt="">
             </section>
         </div>
 
         <div>
             <section class="large">
+                <img class="left" src="assets/images/kerning-leading-tracking-2.png" alt=""/>
                 <div>
                     <h3>Kerning, Leading & Tracking</h3>
 
@@ -44,8 +44,6 @@ include "assets/inc/head.php";
                     <p>
                         Tracking (letter-spacing) is the adjustment of space between all characters. It allows you to uniformly increase or decrease this letter spacing while maintaining consistency across the text. The text remains uniform thanks to kerning.
                     </p>
-
-                    <img src="assets/images/kerning-leading-tracking-2.png" alt=""/>
                 </div>
             </section>
         </div>
@@ -62,29 +60,28 @@ include "assets/inc/head.php";
                     <p>
                         Color has three main components: value, hue, and saturation. Balancing these ensures that readability and guide attention to key areas. Color can also reinforce a brand's personality and values.
                     </p>
-
-                    <img src="assets/images/color.jpg" alt=""/>
                 </div>
+                <img src="assets/images/color.jpg" alt=""/>
             </section>
         </div>
 
         <div>
             <section class="large">
+                <img class="right" src="assets/images/micro-whitespace.png" alt=""/>
                 <div>
                     <h3>White Space</h3>
 
                     <p>
                         White space, or negative space, is the empty space surrounding text or graphics, such as margins, padding, and line spacing. Though subtle, it largely impacts readability and legibility of text and the page's overall look and feel. When used correctly, white space creates a clean, uncluttered, and visually appealing appearance. It can help focus the user's attention and emphasize important content.
                     </p>
-
-                    <img src="assets/images/micro-whitespace.png" alt=""/>
-                    <img src="assets/images/macro-whitespace.png" alt=""/>
                 </div>
+                <img class="left" src="assets/images/macro-whitespace.png" alt=""/>
             </section>
         </div>
 
         <div>
             <section class="large">
+                <img class="right" src="assets/images/hierarchy.webp" alt=""/>
                 <div>
                     <h3>Hierarchy</h3>
 
@@ -95,8 +92,6 @@ include "assets/inc/head.php";
                     <p>
                         A clear hierarchy allows users to quickly recognize how information is structured and where it belongs. In other words, they can use their intuition to navigate through your content. 
                     </p>
-
-                    <img src="assets/images/hierarchy.webp" alt=""/>
                 </div>
             </section>
         </div>
