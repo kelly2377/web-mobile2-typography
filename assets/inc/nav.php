@@ -13,7 +13,8 @@
                 History
             </button>
             <ul id="submenu-history" class="submenu">
-                <li><a href="#">Origins & Evolution</a></li>
+                <!-- Origins & Evolution -->
+                <li <?php if ($currentPage == "Origin & Evolution") { echo 'class="is-current"'; } ?>><a href="origin-and-evolution.php">Origin & Evolution</a></li>
                 <li <?php if ($currentPage == "Modern Research & Discoveries") { echo 'class="is-current"'; } ?>><a href="modern-research-discoveries.php">Modern Research & Discoveries</a></li>
             </ul>
         </li>
@@ -34,7 +35,7 @@
                 Practical Uses
             </button>
             <ul id="submenu-uses" class="submenu">
-                <li><a href="#">Applications</a></li>
+                <li <?php if ($currentPage == "Applications") { echo 'class="is-current"'; } ?>><a href="applications.php">Applications</a></li>
                 <li><a href="#">Good vs Bad Uses of Typography</a></li>
             </ul>
         </li>
