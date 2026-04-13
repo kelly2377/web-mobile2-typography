@@ -35,7 +35,7 @@
                 Practical Uses
             </button>
             <ul id="submenu-uses" class="submenu">
-                <li <?php if ($currentPage == "Applications") { echo 'class="is-current"'; } ?>><a href="applications.php">Applications</a></li>
+                <li <?php if ($currentPage == "Applications") { echo 'class="is-current"'; } ?>><a href="application.php">Applications</a></li>
                 <li><a href="#">Good vs Bad Uses of Typography</a></li>
             </ul>
         </li>
