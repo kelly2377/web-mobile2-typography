@@ -34,9 +34,5 @@ document.querySelectorAll(".carousel").forEach(carousel => {
         }
         updatecarouselimage(currentindex);
     });
-    // setInterval(() =>{
-    //     currentindex = (currentindex + 1 ) % items.length;
-    //     updatecarouselimage(currentindex);
-    // }, 4000)
     updatecarouselimage(0);
 });
