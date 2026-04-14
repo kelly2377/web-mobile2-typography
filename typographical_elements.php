@@ -14,7 +14,7 @@ include "assets/inc/head.php";
             <section class="large">
                 <div>
                     <h3>Fonts & Typefaces</h3>
-                    <img class="right" src="assets/images/fonts-typefaces-2.png" alt="">
+                    <img class="right" src="assets/images/fonts-typefacess.png" alt="">
                     <p>
                         The visual style of characters is central to typography and its power to communicate to users. However, fonts and typefaces are not the same. A font is a single graphical representation of text, while a typeface is a family of related fonts that vary in width, weight, or style. The four common typeface categories are serif, sans-serif, script, and decorative,  with serif and sans-serif often used to distinguish between headers and body text.
                     </p>
@@ -30,7 +30,7 @@ include "assets/inc/head.php";
             <section class="large">
                 <div>
                     <h3>Kerning, Leading & Tracking</h3>
-                    <img class="left" src="assets/images/kerning-leading-tracking-2.png" alt=""/>
+                    <img class="left" src="assets/images/kerning-leading-tracking.png" alt=""/>
                     <p>
                         Kerning is the spacing between individual characters, based on their shapes. Effective kerning creates even spacing, ensuring a consistent amount of white space between letters.
                     </p>
