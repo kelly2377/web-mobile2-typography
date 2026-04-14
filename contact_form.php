@@ -21,11 +21,11 @@ include "assets/inc/head.php";
                 <form method="post" action="form_process.php">
                     <fieldset>  
                         <div class="name">
-                            <label for="name">First Name <span>*</span></label>
-                            <input type="text" name="fname" id="fname" required>
+                            <label for="firstName">First Name <span>*</span></label>
+                            <input type="text" name="firstName" id="firstName" required>
                         
-                            <label for="name">Last Name <span>*</span></label>
-                            <input type="text" name="lname" id="lname" required>
+                            <label for="lastName">Last Name <span>*</span></label>
+                            <input type="text" name="lastName" id="lastName" required>
                         </div>
 
                         <div>
@@ -34,8 +34,8 @@ include "assets/inc/head.php";
                         </div>
 
                         <div>
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" name="phone" id="phone" placeholder="xxx-xxx-xxxx">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx">
                         </div>
                     </fieldset>
                     
@@ -43,33 +43,33 @@ include "assets/inc/head.php";
                         <p>Reason for contacting: <span>*</span></p>
 
                         <div>
-                            <input type="radio" name="reason" id="info" value="New Topic" checked>
-                            <label for="info">I have a topic I would like to see on this site.</label>
+                            <input type="radio" name="contactReason" id="new" value="New Topic" checked>
+                            <label for="new">I have a topic I would like to see on this site.</label>
                         </div>
 
                         <div>
-                            <input type="radio" name="reason" id="rec" value="Question">
-                            <label for="rec">I have a question.</label>
+                            <input type="radio" name="contactReason" id="question" value="Question">
+                            <label for="question">I have a question.</label>
                         </div>
 
                         <div>
-                            <input type="radio" name="reason" id="join" value="Content Feedback">
-                            <label for="rec">I have feedback on the content of this site.</label>
+                            <input type="radio" name="contactReason" id="feedback" value="Content Feedback">
+                            <label for="feedback">I have feedback on the content of this site.</label>
                         </div>
 
                         <div>
-                            <input type="radio" name="reason" id="reason-other" value="Other">
+                            <input type="radio" name="contactReason" id="reason-other" value="Other">
                             <label for="reason-other">I have another reason</label>
                         </div>
                     </div>
 
                     <div class="long-text">
-                        <label for="additional">Question/Message: <span>*</span></label><br>
-                        <textarea name="additional" id="additional" required placeholder="Type here..."></textarea>
+                        <label for="message">Question/Message: <span>*</span></label><br>
+                        <textarea name="message" id="message" required placeholder="Type here..."></textarea>
                     </div>
 
-                    <div class="align-right">
-                        <input type="Submit" value="Send Information">
+                    <div>
+                        <input name="submit" type="submit" value="Send Information">
                     </div>
                 </form>
             </section>

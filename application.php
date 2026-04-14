@@ -16,7 +16,7 @@ include "assets/inc/head.php";
             <section class="large" style="background-color: transparent">
                 <img src="assets/images/coca_cola.png" alt="coca_cola_image" class="left" style="width: 35%">
                 <h2>Typography for Logos</h2>
-                    <p style="line-height:1.6">
+                    <p>
                         Logos are an important fundamental pillar when it comes to strong brand identity. The Coca-Cola logo is a well known brand 
                         that is recognized everywhere. A good logo is a logo that is memorable and easily recognizable, it should also be able to 
                         stand out and create emotions in the viewer. Logos sometimes are just text and some contain both text and an icon or image.
@@ -36,7 +36,7 @@ include "assets/inc/head.php";
             <section class="large" style="background-color: transparent">
                 <img src="assets/images/movie_poster.png" alt="little_mermaid_poster" class="left" style="width: 35%">
                 <h2>Typography for Posters</h2>
-                    <p style="line-height:1.6">
+                    <p>
                         Typography in posters is important because the message on the poster will need to convey the message to the audience and need to catch 
                         the audience's eye. Posters have multiple purposes such as promoting events like concerts, local markets, albums and many other events. 
                         The poster would need to make the audience stop and read what is shown on the poster and it would also need to show the readers what the
@@ -58,7 +58,7 @@ include "assets/inc/head.php";
             <section class="large" style="background-color: transparent">
                 <img src="assets/images/shirt.png" alt="fanta_t-shirt" class="left" style="width: 35%">
                 <h2>Typography for T-shirts</h2>
-                    <p style="line-height:1.6">
+                    <p>
                         Typography for shirts are important because the typography can have different tasks such as just displaying the brand name but 
                         also it can deliver an important slogan or funny message. For instance, the "Girls support girls" slogan t-shirt from the clothing brand
                         pieces has a cursive script typeface which is an elegant text and it's positions in the center of the shirt which stands out. 
@@ -76,7 +76,7 @@ include "assets/inc/head.php";
             <section class="large" style="background-color: transparent">
                 <img src="assets/images/n26website.png" alt="application_and_website_image" class="left" style="width: 35%; height:auto">
                 <h2>Typography for Websites & Apps</h2>
-                    <p style="line-height:1.6">
+                    <p>
                         Typography for website and applications is important because it impacts user experience. When it comes to design a website or application, the overall goals is to create something
                         that is user friendly and also looks easy to navigate. Users not only want to see that the website is appealing but they also want to be able to use the website or application easily. 
                         If the website was difficult to use then the users experience would be really bad and they wouldn't want to use the website anymore. The accessibilty in a website and application also matters
@@ -94,7 +94,7 @@ include "assets/inc/head.php";
             <section class="large" style="background-color: transparent">
                 <img src="assets/images/chocolate.png" alt="chocolate" class="left" style="width: 35%">
                 <h2>Typography for Product Packaging</h2>
-                    <p style="line-height:1.6">
+                    <p>
                         Typography for product packaging is important because it helps convey the brand's identity and help market the product to a specific audience. But typography on products is also condence because there's only a limited 
                         space such as chocolate bar wrappers, cosmetic bottles and soda cans. Designers would need to know what information the customers would want to find when looking at a product in order to make the product stand out. Some tips and 
                         best practices for typography in product packaging is look at what the brands values are and the market they are competing in. They would also need to know what their target audience is and what the audience would expect from the product.
