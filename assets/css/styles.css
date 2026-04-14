@@ -2,7 +2,7 @@
     --planetary: #334eac;
     --universe: #7096d1;
     --milkyway: #fff9f0;
-    --venus: #bad6e8;
+    --venus: #B4D8EE;
     --meteor: #f7f2eb;
     --galaxy: #081f5c;
     --sky: #d0e3ff;
@@ -14,7 +14,7 @@ html {
 
     min-width: 400px;
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 iframe {
@@ -50,8 +50,8 @@ nav a {
 }
 
 nav#primary-nav{
-    background: #B4D8EE;
-    border-bottom: 2px solid #7096D1;
+    background: var(--venus);
+    border-bottom: 2px solid var(--universe);
     padding:2rem 5% 1rem 5%;
     position: sticky;
     display: flex;
@@ -120,13 +120,13 @@ li.is-open .submenu{
 
 .submenu a:hover {
     background: #f8f8f8;
-    color: #7096D1;
+    color: var(--universe);
 }
 
 #menu-button{
     display: none;
     background: white;
-    border:1px solid #7096D1;
+    border:1px solid var(--universe);
     padding: 8px 15px;
     cursor: pointer;
     margin-bottom: 15px;
@@ -214,10 +214,60 @@ main img.right {
     float: right;
 }
 
+/* contact form */
+.contact-page > div{
+    padding: 20px;
+    border-radius: 2px;
+}
+
+.contact-page span{
+    color: red;
+}
+
+.contact-page h2, .contact-page section > p{
+    text-align: center;
+}
+
+.contact-page input[type=text], input[type=tel], input[type=email], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 5px auto 15px;
+}
+
+.contact-page .contact-reason, .long-text{
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.contact-page textarea{
+    resize: vertical;
+}
+
+.contact-page input[type=submit]{
+    background-color: var(--planetary);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-page input[type=submit]:hover{
+    background-color: var(--galaxy);
+}
+
+.contact-page fieldset{
+    border: none;
+}
+
 /* footer */
 .typography-footer{
-    background-color: #B4D8EE;
-    color:#334EAC;
+    background-color: var(--venus);
+    color: var(--planetary);
     padding:60px 5% 20px 5%;
     font-family: Verdana, sans-serif; 
 }
