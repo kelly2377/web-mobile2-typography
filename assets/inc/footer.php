@@ -7,10 +7,11 @@
             <div class="footer-column">
                 <h3>Site map</h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">History</a></li>
                     <li><a href="#">Typographers</a></li>
-                    <li><a href="#">Fundamentals</a></li>
+                    <li><a href="typographical_elements.php">Fundamentals</a></li>
+                    <li><a href="#">Usage</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -18,7 +19,7 @@
                 <p>This is an information site about typography.</p>
             </div>
             <div class="footer-column">
-                <a href="#" class="contact-link">Contact us</a>
+                <a href="contact_form.php" class="contact-link">Contact us</a>
             </div>
         </div>
     </div>

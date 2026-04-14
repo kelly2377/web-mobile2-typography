@@ -24,8 +24,8 @@
                 Fundamentals
             </button>
             <ul id="submenu-fundamentals" class="submenu">
-                <li><a href="#">Typographic Elements</a></li>
-                <li><a href="#">Principles of Typography</a></li>
+                <li <?php if ($currentPage == "Modern Research & Discoveries") { echo 'class="is-current"'; } ?>>><a href="typographical_elements.php">Typographic Elements</a></li>
+                <li <?php if ($currentPage == "Modern Research & Discoveries") { echo 'class="is-current"'; } ?>>><a href="principles.php">Principles of Typography</a></li>
             </ul>
         </li>
 
