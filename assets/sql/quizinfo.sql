@@ -27,7 +27,7 @@ CREATE TABLE answers(
     id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     question_id int NOT NULL,
     answer TEXT NOT NULL,
-    is_correct BOOLEAN,
+    is_correct TINYINT(1),
     FOREIGN KEY (question_id) REFERENCES questions(id)
 )ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
