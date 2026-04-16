@@ -1,3 +1,13 @@
+-- dropping tables
+DROP TABLE IF EXISTS quiz;
+DROP TABLE IF EXISTS questions;
+DROP TABLE IF EXISTS answers;
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS user_answers;
+DROP TABLE IF EXISTS user_responses;
+
+
+
 -- Quiz table and data insertion
 CREATE TABLE quiz(
     id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
