@@ -6,6 +6,11 @@
     --meteor: #f7f2eb;
     --galaxy: #081f5c;
     --sky: #d0e3ff;
+    --whiteish: #f0f0f0;
+    --grayish: #f0f0f0;
+    --darkishgray: hwb(0 67% 32% / 0.502);
+    --lightgreen:#b1eac4;
+    --lightred: #eeb0b0;
 }
 
 html {
@@ -339,6 +344,98 @@ main img.right {
 .carousel_button--selected{
     background: white;
     
+}
+
+/* quiz css */
+.quiz-container{
+    background-color: var(--venus);
+    padding:40px;
+    border-radius:4px;
+    max-width:800px;
+    margin: 20px auto;
+}
+.quiz-inner-container{
+    background-color: var(--milkyway);
+    padding:30px;
+    min-height: 300px;
+    border-radius: 2px;
+}
+.question-num{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+.question-prompt{
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+.answer-choice{
+    display:block;
+    background: var(--whiteish);
+    margin-bottom: 5px;
+    padding:10px;
+    cursor: pointer;
+}
+.next-button, .submit-button{
+    background-color:var(--venus) ;
+    border:none;
+    border-radius: 2px;
+    padding:10px 25px;
+    color: #444;
+    cursor: pointer;
+    margin-top: 20px ;
+}
+.next-button:hover{
+    background-color: var(--universe);
+}
+.submit-button:hover{
+    background-color: var(--universe);
+}
+.button-action{
+    background-color:var(--venus) ;
+    border:none;
+    color: white;
+    padding:10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 2px;
+}
+.button-action:hover{
+    background-color: var(--universe);
+}
+.answer-row{
+    display:flex;
+    align-items: center;
+    background-color: var(--whiteish);
+    margin-bottom: 2px;
+    padding:10px 15px;
+    position:relative;
+}
+.dot{
+    height:18px;
+    width:19px;
+    background-color: var(--grayish);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.correct-row{
+    background-color: var(--lightgreen);
+}
+.wrong-row{
+    background-color: var(--lightred);
+}
+.fb-icon{
+    width:20px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.status-tag{
+    position: absolute;
+    right:15px;
+    font-size: 0.75rem;
+    color:#666;
+    background:var(--darkishgray) ;
+    padding:2px 8px;
 }
 
 /* footer */

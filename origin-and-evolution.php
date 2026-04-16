@@ -50,7 +50,7 @@ include "assets/inc/head.php";
                 <img src="assets/images/hieroglyphics.png" alt="hieroglyphics image" style="width: 100%">
             </section>
         </div> 
-        <button>Take Quiz!</button> 
+        <a href="quiz.php?quiz_id=2" class="btn"><button>Take Quiz!</button></a>
     </main>
 
     <!-- footer -->
