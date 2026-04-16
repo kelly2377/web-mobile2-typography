@@ -6,37 +6,44 @@ include "assets/inc/head.php";
     <?php
     $currentPage = "Contact Form";
     include "assets/inc/nav.php";
+    include "form_process.php";
     ?>
 
     <main>  
         <div>
             <section class="large">
                 <section>
+                    <?php if ($success){ ?>
+                        <h2>Thanks For Reaching Out!</h2>
+
+                        <p>Your message was successfully submitted. We'll reply shortly.</p>  
+                    <?php }?>
                     <h2>Contact Us!</h2>
 
                     <p>Have questions about typography or ideas to improve this site? Fill out the form below. We'll get back to you shortly.</p>
                     <p><span>*</span> indicates a required field</p>
                 </section> 
 
-                <form method="post" action="form_process.php">
+                <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                     <fieldset>  
                         <div class="name">
-                            <label for="firstName">First Name <span>*</span></label>
-                            <input type="text" name="firstName" id="firstName" required>
+                            <label for="firstName">First Name <span>* <?php echo $firstNameErr;?></span></label>
+                            <input required type="text" name="firstName" id="firstName" value="<?php echo $firstName;?>">
                         
-                            <label for="lastName">Last Name <span>*</span></label>
-                            <input type="text" name="lastName" id="lastName" required>
+                            <label for="lastName">Last Name <span>* <?php echo $lastNameErr;?></span></label>
+                            <input required type="text" name="lastName" id="lastName" value="<?php echo $lastName;?>">
                         </div>
 
                         <div>
-                            <label for="email">Email <span>*</span></label>
-                            <input type="email" name="email" id="email" required placeholder="somebody@somewhere.com">
+                            <label for="email">Email <span>* <?php echo $emailErr;?></span></label>
+                            <input type="email" name="email" id="email" required placeholder="somebody@somewhere.com" value="<?php echo $email;?>">
                         </div>
 
                         <div>
-                            <label for="phoneNumber">Phone Number</label>
-                            <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx">
+                            <label for="phoneNumber">Phone Number <span><?php echo $phoneNumberErr;?></span></label>
+                            <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" minlength=10 maxlength=15 pattern="[0-9]{3}[- ]?[0-9]{3}[- ]?[0-9]{4}" value="<?php echo $phoneNumber;?>" title="Only numbers, (, -, or space allowed">
                         </div>
+                        
                     </fieldset>
                     
                     <div class="contact-reason">
@@ -64,8 +71,8 @@ include "assets/inc/head.php";
                     </div>
 
                     <div class="long-text">
-                        <label for="message">Question/Message: <span>*</span></label><br>
-                        <textarea name="message" id="message" required placeholder="Type here..."></textarea>
+                        <label for="message">Question/Message: <span>* <?php echo $messageErr;?></span></label><br>
+                        <textarea name="message" id="message" required placeholder="Type here..."><?php echo $message;?></textarea>
                     </div>
 
                     <div>

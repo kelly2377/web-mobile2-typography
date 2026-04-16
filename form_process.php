@@ -1,37 +1,81 @@
 <?php
-	$currentPage = "Contact Form";
-	include "assets/inc/head.php";
-
     include('../../../dbConn.php');
 
-	if (isset($_POST['submit'])) {
-		$fname = $_POST['fname'];
-		$lname = $_POST['lname'];
-		$email = $_POST['email'];
-		$phoneNumber = $_POST['phoneNumber'];
-		$reason = $_POST['reason'];
-		$message = $_POST['message'];
+	$firstNameErr = "";
+	$lastNameErr = "";
+	$emailErr = "";
+	$phoneNumberErr = "";
+	$messageErr = "";
+	$success = false;
 
-		$statement = $mysqli->prepare("INSERT INTO contactMessages (`fname`, `lname`, `email`, `phoneNumber`, `reason`, `message`, `date`) VALUES (?, ?, ?, ?, ?, ?,  now())");
-		$statement->bind_param("sssssss", $fname, $lname, $email, $phoneNumber, $reason, $message);
-		$statement->execute();
-		$statement->close();
+	$firstName = $lastName = $email = $phoneNumber = $message = "";
+
+	function test_input($data) {
+		$data = trim($data);
+		$data = stripslashes($data);
+		$data = htmlspecialchars($data);
+		return $data;
 	}
-?>
 
-<body>
-	<?php
-    $currentPage = "Contact Form";
-    include "assets/inc/nav.php";
-    ?>
 
-	<h1>Thanks For Reaching Out!</h1>
-	<p>Your message was received. We'll reply within 24 hours.</p>
-	<!-- maybe back to home? -->
-</body>
-</html>
+	if (isset($_POST['submit'])) {
+		$contactReason = test_input($_POST['contactReason']);
 
-<?php
-    include "assets/inc/footer.php";
+		if (empty($_POST['firstName'])){
+			$firstNameErr = "First name is required!";
+		} else{
+			$firstName = test_input($_POST['firstName']);
+
+			if (!preg_match("/^[a-zA-Z-' ]*$/", $firstName)) {
+				$firstNameErr = "Only letters and white space allowed";
+			}
+		}
+
+		if (empty($_POST['lastName'])){
+			$lastNameErr = "Last name is required!";
+		} else{
+			$lastName = test_input($_POST['lastName']);
+
+			if (!preg_match("/^[a-zA-Z-' ]*$/", $lastName)) {
+				$lastNameErr = "Only letters and white space allowed";
+			}
+		}
+
+		if (empty($_POST['email'])){
+			$emailErr = "Email is required!";
+		}else{
+			$email = test_input(filter_var($_POST['email'], FILTER_SANITIZE_EMAIL));
+
+			if (filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+				$emailErr = "Invalid email!";
+			}
+		}
+
+		if (!empty($_POST['phoneNumber'])) {
+			$phoneNumber = test_input($_POST['phoneNumber']);
+
+			if (!preg_match("/^(\([0-9]{3}\)|[0-9]{3})[ -]?[0-9]{3}[ -]?[0-9]{4}$/", $phoneNumber)) {
+				$phoneNumberErr = "Invalid phone number format!";
+			}
+			if (strlen($phoneNumber) < 10) {
+				$phoneNumberErr = "Please provide a phone number of 10 digits!";
+			}
+		}
+
+		if (empty($_POST['message'])){
+			$messageErr = "Message is required!";
+		} else{
+			$message = test_input($_POST['message']);
+		}
+
+		if ($firstNameErr == "" && $lastNameErr == "" && $emailErr == "" && $phoneNumberErr == "" && $messageErr == ""){
+			$statement = $mysqli->prepare("INSERT INTO contactMessages (`firstName`, `lastName`, `email`, `phoneNumber`, `contactReason`, `message`, `date`) VALUES (?, ?, ?, ?, ?, ?,  now())");
+			$statement->bind_param("ssssss", $firstName, $lastName, $email, $phoneNumber, $contactReason, $message);
+			$statement->execute();
+			$statement->close();
+			$success = true;
+		}
+	}
+
 	$mysqli->close();
 ?>
