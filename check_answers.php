@@ -38,12 +38,12 @@ $user_data = mysqli_fetch_assoc($user_q);
                                     if($opt['is_correct'] == 1) {
                                         $rowClass .= " correct-row";
                                         $tag = "Correct Answer";
-                                        $icon = "✔";
+                                        $icon = "&#x2713;";
                                     } 
                                     if($opt['id'] == $user_choice && $opt['is_correct'] == 0) {
                                         $rowClass .= " wrong-row";
                                         $tag = "Your Answer";
-                                        $icon = "✘";
+                                        $icon = "&#x2717";
                                     }
                                     if($opt['id'] == $user_choice && $opt['is_correct'] == 1) {
                                         $tag = "Your Answer"; 
