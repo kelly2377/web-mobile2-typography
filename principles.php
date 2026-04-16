@@ -78,7 +78,7 @@ include "assets/inc/head.php";
             </section>
         </div>
         
-        <button>Take Quiz!</button> 
+        <a href="quiz.php?quiz_id=5" class="btn"><button>Take Quiz!</button></a>
 
     </main>
 

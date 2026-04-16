@@ -37,6 +37,24 @@ INSERT INTO questions(quiz_id,question_prompt) VALUES
 (6, 'What is the first step in picking a logo typeface?'),
 (6, 'How should text be organized on product packaging?');
 
+-- quiz 4 questions
+(4, 'What is the main difference between a font and a typeface?'),
+(4, 'Which of the following is NOT one of the common typeface categories mentioned?'),
+(4, 'What does kerning refer to?'),
+(4, 'What is leading (line height)?'),
+(4, 'What is tracking?'),
+(4, 'Why is white space important in design?'),
+(4, 'What does visual hierarchy help users do?'),
+
+-- quiz 5 questions
+(5, 'What is the difference between legibility and readability?'),
+(5, 'What helps achieve both legibility and readability?'),
+(5, 'Why is consistency important in typography?'),
+(5, 'What is a key risk of using too many fonts?'),
+(5, 'What does contrast in typography involve?'),
+(5, 'What is the purpose of repetition in design?'),
+(5, 'What does alignment help achieve in typography?'),
+
 -- Answers table and data insertion
 CREATE TABLE answers(
     id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -96,6 +114,77 @@ INSERT INTO answers(question_id,answer,is_correct) VALUES
 (10, 'Put the brand name on the front and smaller readable details such as ingredients on the back', 1),
 (10, 'Both a and b', 0),
 (10, 'None of the above', 0);
+
+-- quiz 4 multiple choices and correct answers
+(11, 'A font is a family of typefaces, while a typeface is a single style', 0),
+(11, 'A font is a single graphical representation, while a typeface is a family of related fonts', 1),
+(11, 'They are the same thing', 0),
+(11, 'A typeface only refers to digital text while font refers to all characters', ),
+
+(12, 'Serif', 0),
+(12, 'Sans-serif', 0),
+(12, 'Handwriting', 1),
+(12, 'Decorative', 0),
+
+(13, 'The space between lines of text', 0),
+(13, 'The spacing between individual characters', 1),
+(13, 'The color of text', 0),
+(13, 'The size of a font family', 0),
+
+(14, 'The width of letters in a word', 0),
+(14, 'The spacing between characters', 0),
+(14, 'The thickness of a font', 0),
+(14, 'The vertical space between lines of text', 1),
+
+(15, 'Adjusting space between all characters uniformly', 1),
+(15, 'Changing the font style of text', 0),
+(15, 'Increasing space between paragraphs only', 0),
+(15, 'Adjusting the color contrast of text', 0),
+
+(16, 'It makes text larger', 0),
+(16, 'It fills empty areas with decoration', 0),
+(16, 'It improves readability and creates a clean layout', 1),
+(16, 'It replaces the need for headings', 0),
+
+(17, 'Recognize how information is structured and navigate content easily', 1),
+(17, 'Choose font colors', 0),
+(17, 'Increase text spacing automatically', 0),
+(17, 'Replace typography rules', 0),
+
+-- quiz 5 multiple choices and correct answers
+(18, 'Legibility is about layout, readability is about font style', 0),
+(18, 'Legibility is how easily individual characters are distinguished, readability is how easily text is understood', 1),
+(18, 'They both mean the same thing', 0),
+
+(19, 'Using decorative fonts and multiple colors', 0),
+(19, 'Using small text with high density', 0),
+(19, 'Clear fonts, proper spacing, and sufficient contrast', 1),
+(19, 'Avoiding hierarchy in design', 0),
+
+(20, 'It makes text longer', 0),
+(20, 'It prevents confusion and helps users recognize patterns', 1),
+(20, 'It removes the need for headings', 0),
+(20, 'It increases the number of fonts used', 0),
+
+(21, 'It creates confusion and reduces cohesion', 1),
+(21, 'It improves readability', 0),
+(21, 'It decreases contrast', 0),
+(21, 'It makes text more legible', 0),
+
+(22, 'Using only one font style', 0),
+(22, 'Adjusting spacing between letters', 0),
+(22, 'Varying size, weight, color, or typeface to create distinction', 1),
+(22, 'Aligning text to the center only', 0),
+
+(23, 'To make text longer', 0),
+(23, 'To remove hierarchy', 0),
+(23, 'To reinforce structure and create visual unity', 1),
+(23, 'To increase font variety', 0),
+
+(24, 'Random positioning of elements', 0),
+(24, 'A more colorful layout', 0),
+(24, 'Larger font sizes automatically', 0),
+(24, 'Structured placement that improves readability and visual balance', 1),
 
 
 -- users table and data insertion
