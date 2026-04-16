@@ -105,7 +105,7 @@ include "assets/inc/head.php";
                 <div style="clear: both"></div>
             </section>
         </div>
-        <button>Take Quiz!</button> 
+        <a href="quiz.php?quiz_id=6" class="btn"><button>Take Quiz!</button></a>
     </main>
 
     <!-- footer -->
