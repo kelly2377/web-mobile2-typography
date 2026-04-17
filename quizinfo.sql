@@ -51,7 +51,7 @@ INSERT INTO questions(quiz_id,question_prompt) VALUES
 (4, 'What is the main difference between a font and a typeface?'),
 (4, 'Which of the following is NOT one of the common typeface categories mentioned?'),
 (4, 'What does kerning refer to?'),
-(4, 'What is leading (line height)?'),
+(4, 'What is leading?'),
 (4, 'What is tracking?'),
 (4, 'Why is white space important in design?'),
 (4, 'What does visual hierarchy help users do?'),
