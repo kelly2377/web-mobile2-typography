@@ -11,7 +11,6 @@ include "assets/inc/head.php";
     
     <!-- page info  -->
     <main>
-        <main>
         <div>
             <section class="large">
                 <img class="left" src="assets/images/paula.jpg">
