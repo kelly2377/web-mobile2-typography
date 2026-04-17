@@ -1,3 +1,13 @@
+-- dropping tables
+DROP TABLE IF EXISTS quiz;
+DROP TABLE IF EXISTS questions;
+DROP TABLE IF EXISTS answers;
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS user_answers;
+DROP TABLE IF EXISTS user_responses;
+
+
+
 -- Quiz table and data insertion
 CREATE TABLE quiz(
     id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -35,7 +45,7 @@ INSERT INTO questions(quiz_id,question_prompt) VALUES
 (6, 'What makes a t-shirt typography design effective?'),
 (6, 'Is the font sans-serif preferred for apps and websites'),
 (6, 'What is the first step in picking a logo typeface?'),
-(6, 'How should text be organized on product packaging?');
+(6, 'How should text be organized on product packaging?'),
 
 -- quiz 4 questions
 (4, 'What is the main difference between a font and a typeface?'),
@@ -53,7 +63,7 @@ INSERT INTO questions(quiz_id,question_prompt) VALUES
 (5, 'What is a key risk of using too many fonts?'),
 (5, 'What does contrast in typography involve?'),
 (5, 'What is the purpose of repetition in design?'),
-(5, 'What does alignment help achieve in typography?'),
+(5, 'What does alignment help achieve in typography?');
 
 -- Answers table and data insertion
 CREATE TABLE answers(
@@ -113,13 +123,13 @@ INSERT INTO answers(question_id,answer,is_correct) VALUES
 (10, 'Put the brand name on the back and it should be smaller and the ingredients on the front', 0),
 (10, 'Put the brand name on the front and smaller readable details such as ingredients on the back', 1),
 (10, 'Both a and b', 0),
-(10, 'None of the above', 0);
+(10, 'None of the above', 0),
 
 -- quiz 4 multiple choices and correct answers
 (11, 'A font is a family of typefaces, while a typeface is a single style', 0),
 (11, 'A font is a single graphical representation, while a typeface is a family of related fonts', 1),
 (11, 'They are the same thing', 0),
-(11, 'A typeface only refers to digital text while font refers to all characters', ),
+(11, 'A typeface only refers to digital text while font refers to all characters', 0),
 
 (12, 'Serif', 0),
 (12, 'Sans-serif', 0),
@@ -184,7 +194,7 @@ INSERT INTO answers(question_id,answer,is_correct) VALUES
 (24, 'Random positioning of elements', 0),
 (24, 'A more colorful layout', 0),
 (24, 'Larger font sizes automatically', 0),
-(24, 'Structured placement that improves readability and visual balance', 1)
+(24, 'Structured placement that improves readability and visual balance', 1);
 
 
 -- users table and data insertion
