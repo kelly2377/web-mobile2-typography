@@ -184,7 +184,7 @@ INSERT INTO answers(question_id,answer,is_correct) VALUES
 (24, 'Random positioning of elements', 0),
 (24, 'A more colorful layout', 0),
 (24, 'Larger font sizes automatically', 0),
-(24, 'Structured placement that improves readability and visual balance', 1),
+(24, 'Structured placement that improves readability and visual balance', 1)
 
 
 -- users table and data insertion
