@@ -36,12 +36,12 @@
             </button>
             <ul id="submenu-uses" class="submenu">
                 <li <?php if ($currentPage == "Applications") { echo 'class="is-current"'; } ?>><a href="application.php">Applications</a></li>
-                <li><a href="#">Good vs Bad Uses of Typography</a></li>
+                <li <?php if ($currentPage == "Good vs Bad Typography") { echo 'class="is-current"'; } ?>><a href="goodvbad.php">Good vs Bad Uses of Typography</a></li>
             </ul>
         </li>
 
-        <li>
-            <a href="#">Typographers</a>
+        <li <?php if ($currentPage == "Famous Typographers") { echo 'class="is-current"'; } ?>>
+            <a href="famous.php">Typographers</a>
         </li>
     </ul>
 </nav>

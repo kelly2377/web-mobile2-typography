@@ -8,10 +8,10 @@
                 <h3>Site map</h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Typographers</a></li>
+                    <li><a href="origin-and-evolution">History</a></li>
+                    <li><a href="famous.php">Typographers</a></li>
                     <li><a href="typographical_elements.php">Fundamentals</a></li>
-                    <li><a href="#">Usage</a></li>
+                    <li><a href="application.php">Usage</a></li>
                 </ul>
             </div>
             <div class="footer-column">
