@@ -39,6 +39,7 @@ ul {
 
 body{
     margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
 
@@ -220,6 +221,110 @@ main img.right {
     margin-left: 10px;
 
     float: right;
+}
+
+
+
+
+.tp-main-container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #081F5C; 
+    background-color: #FFFFF0; 
+}
+
+
+h1, h2, h3, .tp-card-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #081F5C;
+    margin-top: 0;
+}
+
+
+.tp-flex-wrapper {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+   
+    justify-content: center; 
+}
+
+.tp-intro-text {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 20px; /* Modern rounded corners */
+    border: 1px solid #BAD6EB; /* Venus Light Blue */
+    box-shadow: 0 4px 15px rgba(8, 31, 92, 0.05);
+}
+
+
+.tp-card {
+  
+    flex: 0 1 400px; 
+    background: #ffffff;
+    border-radius: 20px; 
+    overflow: hidden; 
+    border: 1px solid #d1d9e6;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tp-card-img {
+    width: 100%;
+    height: 280px; 
+    object-fit: fill; 
+    background-color: #eee;
+    display: block;
+}
+
+.tp-card-content {
+    padding: 2.5rem; 
+}
+
+.tp-card-title {
+    margin-bottom: 1rem;
+    font-size: 2rem; 
+}
+.tp-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(8, 31, 92, 0.1);
+}
+
+
+.tp-card-content {
+    padding: 1.5rem;
+}
+
+.tp-card-title {
+    margin-bottom: 0.75rem;
+    font-size: 1.6rem;
+}
+
+.tp-card-description {
+    font-size: 0.95rem;
+    color: #081F5C;
+    opacity: 0.85;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+.tp-good {
+    color: #334EAC; 
+    font-weight: 600;
+}
+
+.tp-bad {
+    color: #7096D1; 
+    font-weight: 600;
 }
 
 /* contact form */
