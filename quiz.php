@@ -34,6 +34,9 @@ $questions_results = mysqli_query($mysqli, $questions_fetch);
                                 <div class="users-name">
                                     <label>Name: <input type="text" name="user_name" required></label>
                                 </div>
+                                <p id="name-error" style="color:red; display:none;margin-top:5px;font-size:14px">
+                                    Please enter your name before continuing.
+                                </p>
                             <?php endif; ?>
                             <p class="question-num">Question <?php echo $question_num; ?> of <?php echo $total_questions;?>:</p>
                             <p class="question-prompt"><?php echo $question['question_prompt']; ?></p>
