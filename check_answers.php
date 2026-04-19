@@ -1,5 +1,5 @@
 <?php
-$currentPage = "Check Answers";
+$currentPage = "Typography";
 include "assets/inc/head.php";
 include('../../../dbConn.php');
 

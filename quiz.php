@@ -1,5 +1,5 @@
 <?php
-$currentPage = "Quiz";
+$currentPage = "Typography";
 include "assets/inc/head.php";
 include('../../../dbConn.php');
 
@@ -14,7 +14,7 @@ $questions_results = mysqli_query($mysqli, $questions_fetch);
 
 <body>
     <?php
-    $currentPage = "Quiz";
+    $currentPage = "Typography";
     include "assets/inc/nav.php";
     ?>
 <main>
@@ -22,9 +22,6 @@ $questions_results = mysqli_query($mysqli, $questions_fetch);
         <div class="quiz-container">
             <h2><?php echo $quiz['quiz_title']; ?></h2>
             <form method="POST" action="results.php" id="quiz-form">
-                <div class="users-name">
-                    <label>Name: <input type="text" name="user_name" required></label>
-                </div>
                 <div class="quiz-inner-container">
                     <?php
                     $question_num = 1;
@@ -33,6 +30,14 @@ $questions_results = mysqli_query($mysqli, $questions_fetch);
                         $display = ($question_num === 1) ? 'block' : 'none';
                     ?>
                         <div class="question-container" id="step-<?php echo $question_num; ?>" style="display: <?php echo $display; ?>;">
+                            <?php if($question_num === 1): ?>
+                                <div class="users-name">
+                                    <label>Name: <input type="text" name="user_name" required></label>
+                                </div>
+                                <p id="name-error" style="color:red; display:none;margin-top:5px;font-size:14px">
+                                    Please enter your name before continuing.
+                                </p>
+                            <?php endif; ?>
                             <p class="question-num">Question <?php echo $question_num; ?> of <?php echo $total_questions;?>:</p>
                             <p class="question-prompt"><?php echo $question['question_prompt']; ?></p>
                             <div class="answers">
