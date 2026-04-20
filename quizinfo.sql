@@ -63,7 +63,20 @@ INSERT INTO questions(quiz_id,question_prompt) VALUES
 (5, 'What is a key risk of using too many fonts?'),
 (5, 'What does contrast in typography involve?'),
 (5, 'What is the purpose of repetition in design?'),
-(5, 'What does alignment help achieve in typography?');
+(5, 'What does alignment help achieve in typography?'),
+
+-- quiz 1 questions
+(1, 'What is Typography?'),
+(1, 'Which of the following are covered under Typography?'),
+(1, 'What is the role of typography?'),
+(1, 'What can typography be used for?'),
+
+-- quiz 3 questions
+(3, 'What is a serif?'),
+(3, 'What is a sans-serif font?'),
+(3, 'What is a script font?'),
+(3, 'Why were sans-serif fonts adopted quickly?')
+;
 
 -- Answers table and data insertion
 CREATE TABLE answers(
@@ -194,7 +207,50 @@ INSERT INTO answers(question_id,answer,is_correct) VALUES
 (24, 'Random positioning of elements', 0),
 (24, 'A more colorful layout', 0),
 (24, 'Larger font sizes automatically', 0),
-(24, 'Structured placement that improves readability and visual balance', 1);
+(24, 'Structured placement that improves readability and visual balance', 1),
+
+-- quiz 1 multiple choices and correct answers
+(25, 'The appearance of text', 0),
+(25, 'The style of text', 0),
+(25, 'Both of the above', 1),
+(25, 'None of the above', 0),
+
+(26, 'Spacing', 0),
+(26, 'Styling', 0),
+(26, 'Contrast', 0),
+(26, 'All of the above', 1),
+
+(27, 'Ensure the message comes across clearly', 1),
+(27, 'Resonate with the user on a personal level', 0),
+(27, 'Both of the above', 0),
+(27, 'None of the above', 0),
+
+(28, 'Building a brand identity', 0),
+(28, 'Enhance aestetics', 0),
+(28, 'Both of the above', 0)
+(28, 'Convince the user to donate', 0),
+
+-- quiz 3 multiple choices and correct answers
+(29, 'A font with more than two cases (capital, lower, ...)', 0),
+(29, 'Letters with extra strokes at the end of their edges', 1),
+(29, 'A certification needed to register your font', 0)
+(29, 'None of the above', 0),
+
+(30, 'A font that uses serifs', 0),
+(30, 'A font which does not use serifs', 1),
+(30, 'A serif font that makes puns', 0),
+(30, 'A font that uses serifs on capital letters, but not lowercase ones', 0),
+
+(31, 'A font that can only be used on computers (not typewriters) because it contains code to assist the user when typing', 0),
+(31, 'A font made to look like handwriting', 1),
+(31, 'A simple, easy-to-understand font made for writing movie scripts', 0),
+(31, 'None of the above', 0),
+
+(32, 'They were easier to read and understand', 0),
+(32, 'They did not require as high a monitor resolution as serif fonts', 0),
+(32, 'Both of the above', 1),
+(32, 'None of the above', 0)
+;
 
 
 -- users table and data insertion
