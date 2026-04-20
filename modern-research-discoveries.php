@@ -10,12 +10,14 @@ include "assets/inc/head.php";
     ?>
     
     <!-- page info  -->
+    <h2>Modern Research & Discoveries</h2>
+    
     <main>
         <div>
             <section class="large">
                 <img class="left" src="assets/images/serifs.png">
                 <div>
-                    <h2>Sans-serifs</h2>
+                    <h3>Sans-serifs</h3>
                     <p>
                         In the early 19th century, people began using fonts without serifs, known as sans-serif fonts.
                         This style of font was better suited for attention-grabbing and general reading, so newspapers were quick to adopt it.
@@ -29,7 +31,7 @@ include "assets/inc/head.php";
             <section class="large">
                 <img class="right" src="assets/images/scriptfonts.png">
                 <div>
-                    <h2>Script fonts</h2>
+                    <h3>Script fonts</h3>
                     <p>
                         Script fonts are a style that attempts to imitate handwriting.
                     </p>

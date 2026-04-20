@@ -5,7 +5,10 @@ include "assets/inc/head.php";
 
 <body>
     <!-- nav -->
-    <?php include "assets/inc/nav.php"; ?>
+    <?php
+    $currentPage = "Typographical Elements";
+    include "assets/inc/nav.php"; 
+    ?>
 
     <main>
         <h2>Typographical Elements</h2>

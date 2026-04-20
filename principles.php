@@ -5,8 +5,10 @@ include "assets/inc/head.php";
 
 <body>
     <!-- nav -->
-    <?php include "assets/inc/nav.php"; ?>
-
+    <?php
+    $currentPage = "Principles of Typography";
+    include "assets/inc/nav.php"; 
+    ?>
     <main>
         <h2>Principles of Typography</h2>
         

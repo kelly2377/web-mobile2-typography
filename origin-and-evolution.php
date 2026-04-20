@@ -11,6 +11,7 @@ include "assets/inc/head.php";
     <!-- page info -->
     <main>
         <!-- image carousel section -->
+        <h2>Origin & Evolution</h2>
         <div>
             <section class="medium" style="background-color: var(--meteor)">
                 <div class="carousel">
@@ -27,7 +28,7 @@ include "assets/inc/head.php";
             </section>
 
             <section class="small" style="background-color: transparent">
-                <h2>Origins</h2>
+                <h3>Origins</h3>
                     <p>During the 20,000 B.C., the first written communication was found in an ancient cave. During the ancient civilization they used  hieroglyphs and 
                         pictograms symbols were used to communicate with others than speaking. A well known example was the cuneiform in Mesopotamia. But the pictograms 
                         symbols then evolved from drawings to abstract characters. During the medieval period, scribes would carefully create books and manuscripts by hand.
@@ -36,7 +37,7 @@ include "assets/inc/head.php";
         </div>
         <div>
             <section class="medium" style="background-color: transparent">
-                <h2>Evolution of Typography</h2>
+                <h3>Evolution of Typography</h3>
                 <p>Typography has evolved a lot from using symbols to handwritten and illustrated manuscripts. In 3100 B.C., Egyptians were symbols and ideograms in their 
                     art, writing and architecture. In 1600 B.C. Phoenicians created phonograms/symbols that were used to represent words. Currently in the present we also 
                     use phonograms that they created such as % to represent percentage and # to represent number and many more. Phoenicians were the first to create an 
