@@ -3,6 +3,7 @@
     <button id="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav-list">
         Menu
     </button>
+    
     <ul id="primary-nav-list" class="main-menu">
         <li <?php if ($currentPage == "Typography") { echo 'class="is-current"'; } ?>>
             <a href="index.html">Home</a>
