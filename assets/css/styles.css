@@ -13,6 +13,10 @@
     --lightred: #eeb0b0;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 html {
     width: 100%;
     height: 100%;
@@ -53,8 +57,12 @@ a {
     text-decoration: none;
 }
 
-nav a {
+nav a, nav button {
     color: inherit;
+    padding: 10px 5px;
+    display: block;
+    max-height: 39px;
+    width: 100%;
 }
 
 nav#primary-nav{
@@ -80,7 +88,7 @@ nav#primary-nav{
     gap: 15px;
 }
 
-.main-menu > li > a, .submenu-toggle {
+.main-menu > li > a, .main-menu button, .submenu-toggle {
     display: inline-block;
     background: white;
     padding: 10px 25px;
@@ -125,9 +133,10 @@ li.is-open .submenu{
     display: block;
     padding: 12px 20px;
     font-size: 0.85rem;
+    min-height: fit-content;
 }
 
-.submenu a:hover {
+.submenu a:hover, .main-menu a:hover, nav button:hover {
     background: #f8f8f8;
     color: var(--universe);
 }
@@ -139,6 +148,7 @@ li.is-open .submenu{
     padding: 8px 15px;
     cursor: pointer;
     margin-bottom: 15px;
+    width: fit-content;
 
     font-weight: 700;
     font-size: 0.95rem;
@@ -149,6 +159,11 @@ li.is-open .submenu{
 
 nav li.is-current a {
     background-color: var(--universe);
+}
+
+nav li.is-current a:hover {
+    background-color: var(--universe);
+    color: white;
 }
 
 /* main content */
@@ -616,7 +631,6 @@ h1, h2, h3, .tp-card-title {
 
     #menu-button {
         display: inline;
-        margin: 0.5rem;
     }
 
     #primary-nav {
@@ -626,13 +640,15 @@ h1, h2, h3, .tp-card-title {
     #primary-nav > .main-menu { 
         display: none;
         flex-direction: column; 
+        gap: 8px;
+        width: 90%;
     }
 
     #primary-nav.is-menu-open > .main-menu { 
         display: flex;
     }
     
-    nav ul ul { 
+    #primary-nav ul ul { 
         position: static;
         border: none;
         padding-left: 0.75rem;
