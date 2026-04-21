@@ -61,7 +61,7 @@ include "assets/inc/head.php";
                     <p>
                         Typography can also function as its own unique design element. As discussed, different fonts can evoke different emotions, just as any other design element on the page (or screen). Typography can also help establish or build a brand identity while enhancing the overall aesthetic of a document.
                     </p>
-                    <a class="continue" href="goodvsbad/">Learn more about Good vs Bad Typography →</a>
+                    <a class="continue" href="goodvbad.php">Learn more about Good vs Bad Typography →</a>
                 </div>
             </section>
         </div>

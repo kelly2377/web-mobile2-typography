@@ -9,10 +9,9 @@ include "assets/inc/head.php";
     include "assets/inc/nav.php";
     ?>
     
-    <!-- page info  -->
-    <h2>Modern Research & Discoveries</h2>
-    
+    <!-- page info  -->    
     <main>
+        <h2>Modern Research & Discoveries</h2>
         <div>
             <section class="large">
                 <img class="left" src="assets/images/serifs.png">

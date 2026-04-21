@@ -12,6 +12,7 @@ include "assets/inc/head.php";
     <!-- page info  -->
 
    <main class="tp-main-container">
+    <h1>Good vs Bad Typography</h1>
 
     <section class="tp-intro-text">
         <h2>Importance</h2>

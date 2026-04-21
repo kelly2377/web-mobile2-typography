@@ -8,9 +8,9 @@ include "assets/inc/head.php";
     $currentPage = "Famous Typographers";
     include "assets/inc/nav.php";
     ?>
-    <h2>Famous Typographers</h2>
     <!-- page info  -->
     <main>
+        <h2>Famous Typographers</h2>
         <div>
             <section class="large">
                 <img class="left" src="assets/images/paula.jpg">
