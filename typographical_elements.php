@@ -11,7 +11,6 @@ include "assets/inc/head.php";
     ?>
 
     <main>
-        <h2>Typographical Elements</h2>
         
         <div>
             <section class="large">

@@ -6,9 +6,10 @@
 	$emailErr = "";
 	$phoneNumberErr = "";
 	$messageErr = "";
+	$reasonErr = "";
 	$success = false;
 
-	$firstName = $lastName = $email = $phoneNumber = $message = "";
+	$firstName = $lastName = $email = $phoneNumber = $message = $contactReason = "";
 
 	function test_input($data) {
 		$data = trim($data);
@@ -19,8 +20,6 @@
 
 
 	if (isset($_POST['submit'])) {
-		$contactReason = test_input($_POST['contactReason']);
-
 		if (empty($_POST['firstName'])){
 			$firstNameErr = "First name is required!";
 		} else{
@@ -39,6 +38,12 @@
 			if (!preg_match("/^[a-zA-Z-' ]*$/", $lastName)) {
 				$lastNameErr = "Only letters and white space allowed";
 			}
+		}
+
+		if (empty($_POST['contactReason'])){
+			$reasonErr = "Reason is required!";
+		} else{
+			$contactReason = test_input($_POST['contactReason']);
 		}
 
 		if (empty($_POST['email'])){

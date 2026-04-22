@@ -10,12 +10,11 @@ include "assets/inc/head.php";
     include "assets/inc/nav.php"; 
     ?>
     <main>
-        <h2>Principles of Typography</h2>
         
         <div>
             <section class="large">
                 <div>
-                    <h3>Readability & Legibility</h3>
+                    <h2>Readability & Legibility</h2>
                     <img class="right" src="assets/images/legibility-readability.png" alt="Good readability and legibility vs poor readability and legibility">
                     <p>
                         Readability and legibility are closely related but distinct principles in typography. Legibility refers to how easily individual letters and characters can be distinguished, while readability concerns how easily a block of text can be read and understood. To achieve both, designers should use clear fonts, maintain appropriate sizing and spacing, and ensure sufficient contrast between text and background.                    
@@ -27,7 +26,7 @@ include "assets/inc/head.php";
         <div>
             <section class="large">
                 <div>
-                    <h3>Consistency</h3>
+                    <h2>Consistency</h2>
                     <img class="left" src="assets/images/consistency-2.png" alt="Example of consistency"/>
                 
                     <p>
@@ -44,7 +43,7 @@ include "assets/inc/head.php";
         <div>
             <section class="large">
                 <div>
-                    <h3>Contrast</h3>
+                    <h2>Contrast</h2>
                     <img class="right" src="assets/images/contrast-2.png" alt="Ways to make contrast"/>
 
                     <p>
@@ -57,7 +56,7 @@ include "assets/inc/head.php";
         <div>
             <section class="large">
                 <div>
-                    <h3>Repetition</h3>
+                    <h2>Repetition</h2>
                     <img class="left" src="assets/images/repetition.png" alt="Example of repetition"/>
 
                     <p>
@@ -70,7 +69,7 @@ include "assets/inc/head.php";
         <div>
             <section class="large">
                 <div>
-                    <h3>Alignment</h3>
+                    <h2>Alignment</h2>
                     <img class="right" src="assets/images/alignment.gif" alt="Types of alignment"/>
 
                     <p>

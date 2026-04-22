@@ -11,7 +11,6 @@ include "assets/inc/head.php";
     
     <!-- page info  -->
     <main>
-        <h1>Common Typography Applications</h1>
         <div>
             <section class="large" style="background-color: transparent">
                 <img src="assets/images/coca_cola.png" alt="coca_cola_image" class="left" style="width: 35%">
