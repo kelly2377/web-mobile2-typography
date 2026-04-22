@@ -61,7 +61,7 @@ nav a, nav button {
     color: inherit;
     padding: 10px 5px;
     display: block;
-    max-height: 39px;
+    min-height: 44px;
     width: 100%;
 }
 
@@ -629,15 +629,7 @@ h1, h2, h3, .tp-card-title {
 }
 
 /* media query */
-
-@media (max-width: 800px) {
-    main > div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
+@media (max-width: 925px) {
     #menu-button {
         display: inline;
     }
@@ -661,6 +653,15 @@ h1, h2, h3, .tp-card-title {
         position: static;
         border: none;
         padding-left: 0.75rem;
+    }
+}
+
+@media (max-width: 800px) {
+    main > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
 
     main img.left, main img.right {
