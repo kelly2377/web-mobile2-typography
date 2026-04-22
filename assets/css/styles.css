@@ -201,6 +201,8 @@ main > div > section {
 
     background-color: var(--sky);
     border-radius: 12px;
+    border-color: var(--universe);
+    border-style: solid;
 }
 
 main > div > section.large {
