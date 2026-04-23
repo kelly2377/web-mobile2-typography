@@ -18,7 +18,8 @@ document.querySelectorAll(".carousel").forEach(carousel => {
     }
 
     buttons.forEach((button, i) =>{
-        button.addEventListener("click", () =>{
+        button.addEventListener("click", (e) =>{
+            e.stopPropagation();
             currentindex = i;
             updatecarouselimage(currentindex);
         });
@@ -28,7 +29,7 @@ document.querySelectorAll(".carousel").forEach(carousel => {
         const x = e.clientX - rect.left;
 
         if (x < rect.width / 2){
-            currentindex = (currentindex - 1 + items.length % items.length);
+            currentindex = (currentindex - 1 + items.length) % items.length;
         }else{
             currentindex = (currentindex + 1) % items.length;
         }
