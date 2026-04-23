@@ -75,8 +75,16 @@ INSERT INTO questions(quiz_id,question_prompt) VALUES
 (3, 'What is a serif?'),
 (3, 'What is a sans-serif font?'),
 (3, 'What is a script font?'),
-(3, 'Why were sans-serif fonts adopted quickly?')
-;
+(3, 'Why were sans-serif fonts adopted quickly?'),
+
+-- quiz 8 questions
+(8, 'Who created the Sabon typeface?'),
+(8, 'Who called himself a typotect?'),
+(8, 'Which typographer studied art and architecture?'),
+(8, 'Which typographer did a lot of work with public theater?'),
+(8, 'Which typographer is know for her layered compositions?'),
+(8, 'Which typographer is dutch?'),
+(8, 'Which typographer made a big impact to the field of typography?');
 
 -- Answers table and data insertion
 CREATE TABLE answers(
@@ -249,8 +257,43 @@ INSERT INTO answers(question_id,answer,is_correct) VALUES
 (32, 'They were easier to read and understand', 0),
 (32, 'They did not require as high a monitor resolution as serif fonts', 0),
 (32, 'Both of the above', 1),
-(32, 'None of the above', 0)
-;
+(32, 'None of the above', 0),
+
+-- quiz 8 multiple choices and correct answers
+(33, 'Jan Tschichold', 1),
+(33, 'Paula Scher', 0),
+(33, 'Piet Zwart', 0),
+(33, 'None of the above', 0),
+
+(34, 'Jan Tschichold', 1),
+(34, 'Paula Scher', 0),
+(34, 'Piet Zwart', 0),
+(34, 'Erik Spiekermann', 0),
+
+(35, 'Piet Zwart', 1),
+(35, 'Max Miedinger', 0),
+(35, 'Paula Scher', 0),
+(35, 'Zuzana Licko', 0),
+
+(36, 'Paula Scher', 1),
+(36, 'Piet Zwart', 0),
+(36, 'Stefan Sagmeister', 0),
+(36, 'Milton Glaser', 0),
+
+(37, 'Paula Scher', 1),
+(37, 'Piet Zwart', 0),
+(37, 'Jan Tschichold', 0),
+(37, 'Susan Kare', 0),
+
+(38, 'Erik Spiekermann', 0),
+(38, 'Piet Zwart', 1),
+(38, 'Jan Tschichold', 0),
+(38, 'Paula Dean', 0),
+
+(39, 'All of the above', 1),
+(39, 'Paula Schere', 0),
+(39, 'Jan Tschihold', 0),
+(39, 'None of the above', 0);
 
 
 -- users table and data insertion

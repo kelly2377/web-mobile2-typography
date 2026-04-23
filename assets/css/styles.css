@@ -13,6 +13,10 @@
     --lightred: #eeb0b0;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 html {
     width: 100%;
     height: 100%;
@@ -53,8 +57,12 @@ a {
     text-decoration: none;
 }
 
-nav a {
+nav a, nav button {
     color: inherit;
+    padding: 10px 5px;
+    display: block;
+    min-height: 44px;
+    width: 100%;
 }
 
 nav#primary-nav{
@@ -63,6 +71,7 @@ nav#primary-nav{
     padding:2rem 5% 1rem 5%;
     position: sticky;
     top: 0;
+    z-index: 999;
     display: flex;
     flex-direction: column;
 }
@@ -80,7 +89,7 @@ nav#primary-nav{
     gap: 15px;
 }
 
-.main-menu > li > a, .submenu-toggle {
+.main-menu > li > a, .main-menu button, .submenu-toggle {
     display: inline-block;
     background: white;
     padding: 10px 25px;
@@ -125,9 +134,10 @@ li.is-open .submenu{
     display: block;
     padding: 12px 20px;
     font-size: 0.85rem;
+    min-height: fit-content;
 }
 
-.submenu a:hover {
+.submenu a:hover, .main-menu a:hover, nav button:hover {
     background: #f8f8f8;
     color: var(--universe);
 }
@@ -139,6 +149,7 @@ li.is-open .submenu{
     padding: 8px 15px;
     cursor: pointer;
     margin-bottom: 15px;
+    width: fit-content;
 
     font-weight: 700;
     font-size: 0.95rem;
@@ -151,6 +162,11 @@ nav li.is-current a {
     background-color: var(--universe);
 }
 
+nav li.is-current a:hover {
+    background-color: var(--universe);
+    color: white;
+}
+
 /* main content */
 main {
     margin: 20px;
@@ -159,6 +175,11 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+
+main a.continue:hover{
+    text-decoration: underline;
+    color: var(--galaxy);
 }
 
 main > div {
@@ -180,6 +201,9 @@ main > div > section {
 
     background-color: var(--sky);
     border-radius: 12px;
+    border-color: var(--universe);
+    border-width: 1px;
+    border-style: solid;
 }
 
 main > div > section.large {
@@ -605,6 +629,32 @@ h1, h2, h3, .tp-card-title {
 }
 
 /* media query */
+@media (max-width: 925px) {
+    #menu-button {
+        display: inline;
+    }
+
+    #primary-nav {
+        max-width: 100%;
+    }
+
+    #primary-nav > .main-menu { 
+        display: none;
+        flex-direction: column; 
+        gap: 8px;
+        width: 90%;
+    }
+
+    #primary-nav.is-menu-open > .main-menu { 
+        display: flex;
+    }
+    
+    #primary-nav ul ul { 
+        position: static;
+        border: none;
+        padding-left: 0.75rem;
+    }
+}
 
 @media (max-width: 800px) {
     main > div {
@@ -613,10 +663,6 @@ h1, h2, h3, .tp-card-title {
         align-items: center;
         gap: 20px;
         width:100%
-    }
-
-    #menu-button {
-        display: inline;
     }
 
     main img.left, main img.right {

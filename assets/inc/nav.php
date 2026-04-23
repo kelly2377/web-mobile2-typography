@@ -3,6 +3,7 @@
     <button id="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav-list">
         Menu
     </button>
+    
     <ul id="primary-nav-list" class="main-menu">
         <li <?php if ($currentPage == "Typography") { echo 'class="is-current"'; } ?>>
             <a href="index.html">Home</a>
@@ -24,8 +25,8 @@
                 Fundamentals
             </button>
             <ul id="submenu-fundamentals" class="submenu">
-                <li <?php if ($currentPage == "Typographical Elements") { echo 'class="is-current"'; } ?>>><a href="typographical_elements.php">Typographic Elements</a></li>
-                <li <?php if ($currentPage == "Principles of Typography") { echo 'class="is-current"'; } ?>>><a href="principles.php">Principles of Typography</a></li>
+                <li <?php if ($currentPage == "Typographical Elements") { echo 'class="is-current"'; } ?>><a href="typographical_elements.php">Typographic Elements</a></li>
+                <li <?php if ($currentPage == "Principles of Typography") { echo 'class="is-current"'; } ?>><a href="principles.php">Principles of Typography</a></li>
             </ul>
         </li>
 
