@@ -264,62 +264,62 @@ INSERT INTO answers(question_id,answer,is_correct) VALUES
 (32, 'Both of the above', 1),
 (32, 'None of the above', 0),
 
--- quiz 8 multiple choices and correct answers
-(33, 'Jan Tschichold', 1),
-(33, 'Paula Scher', 0),
-(33, 'Piet Zwart', 0),
-(33, 'None of the above', 0),
-
-(34, 'Jan Tschichold', 1),
-(34, 'Paula Scher', 0),
-(34, 'Piet Zwart', 0),
-(34, 'Erik Spiekermann', 0),
-
-(35, 'Piet Zwart', 1),
-(35, 'Max Miedinger', 0),
-(35, 'Paula Scher', 0),
-(35, 'Zuzana Licko', 0),
-
-(36, 'Paula Scher', 1),
-(36, 'Piet Zwart', 0),
-(36, 'Stefan Sagmeister', 0),
-(36, 'Milton Glaser', 0),
-
-(37, 'Paula Scher', 1),
-(37, 'Piet Zwart', 0),
-(37, 'Jan Tschichold', 0),
-(37, 'Susan Kare', 0),
-
-(38, 'Erik Spiekermann', 0),
-(38, 'Piet Zwart', 1),
-(38, 'Jan Tschichold', 0),
-(38, 'Paula Dean', 0),
-
-(39, 'All of the above', 1),
-(39, 'Paula Schere', 0),
-(39, 'Jan Tschihold', 0),
-(39, 'None of the above', 0),
-
 -- quiz 7 multiple choice and correct answers
-(40, 'complexity and different shapes',0),
-(40, 'readability and legibility',1),
-(40, 'bright colors and shadows',0),
-(40, 'All of the above',0),
+(33, 'complexity and different shapes',0),
+(33, 'readability and legibility',1),
+(33, 'bright colors and shadows',0),
+(33, 'All of the above',0),
 
-(41, 'Fonts are considered old',0),
-(41, "There's no clear hierachy", 1),
-(41, 'background is too bright and colorful', 0),
-(41, 'All of the above', 0),
+(34, 'Fonts are considered old',0),
+(34, "There's no clear hierachy", 1),
+(34, 'background is too bright and colorful', 0),
+(34, 'All of the above', 0),
 
-(42, 'There are bright colors being used', 0),
-(42, 'consistent fonts that match mood and is readable', 1),
-(42, "large image that get the reader's attention", 0),
-(42, 'using different fonts', 0),
+(35, 'There are bright colors being used', 0),
+(35, 'consistent fonts that match mood and is readable', 1),
+(35, "large image that get the reader's attention", 0),
+(35, 'using different fonts', 0),
 
-(43,'analyze the audience and goal',0),
-(43, "ask for a friend's opinion",0),
-(43,'analyze audience, product, and goals',1),
-(43,'all of the above',0);
+(36,'analyze the audience and goal',0),
+(36, "ask for a friend's opinion",0),
+(36,'analyze audience, product, and goals',1),
+(36,'all of the above',0),
+
+-- quiz 8 multiple choices and correct answers
+(37, 'Jan Tschichold', 1),
+(37, 'Paula Scher', 0),
+(37, 'Piet Zwart', 0),
+(37, 'None of the above', 0),
+
+(38, 'Jan Tschichold', 1),
+(38, 'Paula Scher', 0),
+(38, 'Piet Zwart', 0),
+(38, 'Erik Spiekermann', 0),
+
+(39, 'Piet Zwart', 1),
+(39, 'Max Miedinger', 0),
+(39, 'Paula Scher', 0),
+(39, 'Zuzana Licko', 0),
+
+(40, 'Paula Scher', 1),
+(40, 'Piet Zwart', 0),
+(40, 'Stefan Sagmeister', 0),
+(40, 'Milton Glaser', 0),
+
+(41, 'Paula Scher', 1),
+(41, 'Piet Zwart', 0),
+(41, 'Jan Tschichold', 0),
+(41, 'Susan Kare', 0),
+
+(42, 'Erik Spiekermann', 0),
+(42, 'Piet Zwart', 1),
+(42, 'Jan Tschichold', 0),
+(42, 'Paula Dean', 0),
+
+(43, 'All of the above', 1),
+(43, 'Paula Schere', 0),
+(43, 'Jan Tschihold', 0),
+(43, 'None of the above', 0);
 
 -- users table and data insertion
 CREATE TABLE users(
