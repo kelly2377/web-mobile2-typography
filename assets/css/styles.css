@@ -565,6 +565,18 @@ h1, h2, h3, .tp-card-title {
     cursor: pointer;
 }
 
+.btn{
+    background-color: var(--venus);
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--universe);
+}
+
+
 /* footer */
 .typography-footer{
     background-color: var(--venus);
