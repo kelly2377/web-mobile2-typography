@@ -20,7 +20,7 @@ include "assets/inc/head.php";
 
     <div class="tp-flex-wrapper">
         <article class="tp-card">
-            <img src="assets/images/dragone.png" class="tp-card-img">
+            <img src="assets/images/dragone.png" alt="good example of typography use, dragone" class="tp-card-img">
             <div class="tp-card-content">
                 <h2 class="tp-card-title tp-good">Good Example</h2>
                 <p class="tp-card-description">This is an example of good typography, because the designer chose consistent typefaces, that convey the mood of the site, while maintaining readability. </p>
@@ -28,7 +28,7 @@ include "assets/inc/head.php";
         </article>
 
         <article class="tp-card">
-            <img src="assets/images/marieguillaumet.png" class="tp-card-img">
+            <img src="assets/images/marieguillaumet.png" alt="good example of typography use, marie guillaumet" class="tp-card-img">
             <div class="tp-card-content">
                 <h2 class="tp-card-title tp-good">Good Example</h2>
                 <p class="tp-card-description">This is an example of good typography, because the designer chose consistent typefaces, that convey the mood of the site, while maintaining readability. </p>
@@ -43,7 +43,7 @@ include "assets/inc/head.php";
 
     <div class="tp-flex-wrapper">
         <article class="tp-card">
-            <img src="assets/images/newventurescouting.png" class="tp-card-img">
+            <img src="assets/images/newventurescouting.png" alt="bad example of typography use, too many typefaces" class="tp-card-img">
             <div class="tp-card-content">
                 <h2 class="tp-card-title tp-bad">Bad Example</h2>
                 <p class="tp-card-description">This is an example of bad typography, because the designer chose too many typefaces, that have no clear hierarchy. This makes the mood chaotic and the content appear less clean.</p>
@@ -51,7 +51,7 @@ include "assets/inc/head.php";
         </article>
 
         <article class="tp-card">
-            <img src="assets/images/unitedstrands.png" class="tp-card-img">
+            <img src="assets/images/unitedstrands.png" alt="bad example of typography use, unclear hierachy" class="tp-card-img">
             <div class="tp-card-content">
                 <h2 class="tp-card-title tp-bad">Bad Example</h2>
                 <p class="tp-card-description">This is an example of bad typography, because the designer chose too many typefaces, that have no clear hierarchy. This makes the mood chaotic and the content appear less clean.</p>

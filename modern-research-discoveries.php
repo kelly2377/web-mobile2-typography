@@ -13,7 +13,7 @@ include "assets/inc/head.php";
     <main>
         <div>
             <section class="large">
-                <img class="left" src="assets/images/serifs.png">
+                <img class="left" src="assets/images/serifs.png" alt="sans-serif font image">
                 <div>
                     <h2>Sans-serifs</h2>
                     <p>
@@ -27,7 +27,7 @@ include "assets/inc/head.php";
 
         <div>
             <section class="large">
-                <img class="right" src="assets/images/scriptfonts.png">
+                <img class="right" src="assets/images/scriptfonts.png" alt="different script fonts image">
                 <div>
                     <h2>Script fonts</h2>
                     <p>

@@ -12,7 +12,7 @@ include "assets/inc/head.php";
     <main>
         <div>
             <section class="large">
-                <img class="left" src="assets/images/paula.jpg">
+                <img class="left" src="assets/images/paula.jpg" alt="typographer paula">
                 <div>
                     <h2>Paula Scher</h2>
                     <p>
@@ -24,7 +24,7 @@ include "assets/inc/head.php";
 
         <div>
             <section class="large">
-                <img class="left" src="assets/images/piet.jpg">
+                <img class="left" src="assets/images/piet.jpg" alt= "typographer piet">
                 <div>
                     <h2>Piet Zwart</h2>
                     <p>
@@ -38,7 +38,7 @@ include "assets/inc/head.php";
 
          <div>
             <section class="large">
-                <img class="left" src="assets/images/jan.jpg">
+                <img class="left" src="assets/images/jan.jpg" alt="typographer jan">
                 <div>
                     <h2>Jan Tschichold</h2>
                     <p>
