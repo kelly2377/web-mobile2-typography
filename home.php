@@ -13,7 +13,7 @@ include "assets/inc/head.php";
     <main>
         <div>
             <section class="large">
-                <img class="left" src="assets/images/typography.png">
+                <img class="left" src="assets/images/typography.png" alt="typography image">
                 <div>
                     <h2>What is Typography?</h2>
                     <p>
