@@ -36,38 +36,38 @@ form.addEventListener("submit", function(event){
     reasonErr.textContent = "";
 
     if (fnameInput === ""){
-        fnameErr.textContent = "Name is a required field!";
+        fnameErr.textContent = "* Name is a required field!";
         isValid = false;
     } else if (!nameRegex.test(fnameInput)){
-        fnameErr.textContent = "Only letters, white space, and some special characters (- and ') allowed";
+        fnameErr.textContent = "* Only letters, white space, and some special characters (- and ') allowed";
         isValid = false;
     }
 
     if (lnameInput === ""){
-        lnameErr.textContent = "Name is a required field!";
+        lnameErr.textContent = "* Name is a required field!";
         isValid = false;
     } else if (!nameRegex.test(lnameInput)){
-        lnameErr.textContent = "Only letters, white space, and some special characters (- and ') allowed";
+        lnameErr.textContent = "* Only letters, white space, and some special characters (- and ') allowed";
         isValid = false;
     }
 
     if (numberInput !== "" && !phoneRegex.test(numberInput)){
-        numberErr.textContent = "Invalid phone number format!";
+        numberErr.textContent = "* Invalid phone number format!";
         isValid = false;
     }
 
     if (!email.checkValidity()){
-        emailErr.textContent = "Please enter a valid email!";
+        emailErr.textContent = "* Please enter a valid email!";
         isValid = false;
     }
 
     if (message.value.trim() === ""){
-        messageErr.textContent = "Please enter a message to send!"
+        messageErr.textContent = "* Please enter a message to send!"
         isValid = false;
     }
 
     if (!isChecked){
-        reasonErr.textContent = "Please select a reason!"
+        reasonErr.textContent = "* Please select a reason!"
         isValid = false;
     }
 
