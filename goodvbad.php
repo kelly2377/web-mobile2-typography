@@ -63,6 +63,7 @@ include "assets/inc/head.php";
         <h2> Type Personality</h2>
         To choose the best typeface for your project you first must analyze your audience, your product, and your goals. Are you looking to sell something to children? Sports fans? Professionals? How do you want your brand to make them feel? A bold sans serif may be perfect for your athletic wear company, but a thin elegant serif is better for a French bakery. Choosing type is an art that can make or break your product. It is up to to research and choose an effective typeface.
     </section>
+    <a href="quiz.php?quiz_id=7" class="btn"><button>Take Quiz!</button></a>
 
 </main>
 
