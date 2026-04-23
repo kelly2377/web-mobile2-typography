@@ -2,25 +2,21 @@ function nextStep(currentStep){
     const currentDiv = document.getElementById('step-' + currentStep);
     if(currentStep === 1){
         const nameinput = document.getElementById('user_name');
+        const nameerrortext = document.getElementById('name-error');
         const nameval = nameinput.value.trim();
         const nameregex = /^[a-zA-Z\s'-]+$/;
-        let nameerror = currentDiv.querySelector('p[style*="color:red"]');
         if(nameval === ""){
-            if(nameerror){
-                nameerror.textContent = "Name is required!";
-                nameerror.style.display = "block";
-            }
+            nameerrortext.textContent = "Name is required!";
+            nameerrortext.style.display = "block";
             nameinput.focus();
             return;
         }else if (!nameregex.test(nameval)){
-            if(nameerror){
-                nameerror.textContent = "Only letters and spaces are allowed";
-                nameerror.style.display = "block";
-            }
+            nameerrortext.textContent = "Only letters and spaces are allowed";
+            nameerrortext.style.display = "block";
             nameinput.focus();
             return;
         }else{
-            name.style.display = "none";
+            nameerrortext.style.display = "none";
         }
     }
     const isChecked = currentDiv.querySelector('input[type="radio"]:checked');

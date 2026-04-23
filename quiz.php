@@ -34,14 +34,17 @@ $questions_results = mysqli_query($mysqli, $questions_fetch);
                             <?php if($question_num === 1): ?>
                                 <div class="users-name">
                                     <label>Name: <span style="color:red;">*</span></label>
-                                    <input type="text" name="user_name" id="user_name" required></label>
+                                    <input type="text" name="user_name" id="user_name" required>
                                     <p id="name-error" style="color:red; margin-top:5px; display: <?php echo($error) ? 'block' : 'none';?>;">
+                                    <?php 
+                                        if($error == "name"){
+                                            echo "Name is required!";
+                                        }elseif ($error == "invalid_name"){
+                                            echo "Only letters and spaces allowed";
+                                        }
+                                    ?>
+                                    </p>
                                 </div>
-                                <?php if($error == "name"):?>
-                                    <p style="color:red;margin-top:5px;">Name is required!</p>
-                                <?php elseif ($error === "invalid_name"): ?>
-                                    <p style="color:red;margin-top:5px;">Only letters and spaces allowed</p>
-                                <?php endif; ?>
                             <?php endif; ?>
                             <p class="question-num">Question <?php echo $question_num; ?> of <?php echo $total_questions;?>:</p>
                             <p class="question-prompt"><?php echo $question['question_prompt']; ?></p>

@@ -42,10 +42,10 @@ foreach($_POST as $key => $value){
             $score++;
         }
     }
-        mysqli_query($mysqli, "INSERT INTO user_results(user_id, quiz_id, score) VALUES ($user_id, $quiz_id, $score)");
-        $percent = ($total > 0)? round(($score / $total) * 100):0;
-        $message = ($percent < 50) ? "Well, you have a lot of studying to do!": "Great job!";
 }
+mysqli_query($mysqli, "INSERT INTO user_results(user_id, quiz_id, score) VALUES ($user_id, $quiz_id, $score)");
+$percent = ($total > 0)? round(($score / $total) * 100):0;
+$message = ($percent < 50) ? "Well, you have a lot of studying to do!": "Great job!";
 ?>
 <body>
     <?php include "assets/inc/nav.php";?>
