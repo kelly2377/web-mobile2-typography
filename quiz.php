@@ -4,10 +4,11 @@ include "assets/inc/head.php";
 include('../../../dbConn.php');
 
 $quiz_id = $_GET['quiz_id'] ?? 1;
+$error = $_GET['error'] ?? '';
+
 $quiz_title = "SELECT * FROM quiz WHERE id=$quiz_id";
 $quiz_results = mysqli_query($mysqli, $quiz_title);
 $quiz = mysqli_fetch_assoc($quiz_results);
-
 $questions_fetch = "SELECT * FROM questions WHERE quiz_id = $quiz_id";
 $questions_results = mysqli_query($mysqli, $questions_fetch);
 ?>
@@ -32,11 +33,15 @@ $questions_results = mysqli_query($mysqli, $questions_fetch);
                         <div class="question-container" id="step-<?php echo $question_num; ?>" style="display: <?php echo $display; ?>;">
                             <?php if($question_num === 1): ?>
                                 <div class="users-name">
-                                    <label>Name: <input type="text" name="user_name" required></label>
+                                    <label>Name: <span style="color:red;">*</span></label>
+                                    <input type="text" name="user_name" id="user_name" required></label>
+                                    <p id="name-error" style="color:red; margin-top:5px; display: <?php echo($error) ? 'block' : 'none';?>;">
                                 </div>
-                                <p id="name-error" style="color:red; display:none;margin-top:5px;font-size:14px">
-                                    Please enter your name before continuing.
-                                </p>
+                                <?php if($error == "name"):?>
+                                    <p style="color:red;margin-top:5px;">Name is required!</p>
+                                <?php elseif ($error === "invalid_name"): ?>
+                                    <p style="color:red;margin-top:5px;">Only letters and spaces allowed</p>
+                                <?php endif; ?>
                             <?php endif; ?>
                             <p class="question-num">Question <?php echo $question_num; ?> of <?php echo $total_questions;?>:</p>
                             <p class="question-prompt"><?php echo $question['question_prompt']; ?></p>
@@ -53,6 +58,9 @@ $questions_results = mysqli_query($mysqli, $questions_fetch);
                                         </label>
                                 <?php } ?>
                             </div>
+                            <p class="choices-error" style="color:red; display:none;margin-top:5px;font-size:14px">
+                                    Please select a choice before moving on.
+                            </p>
                         <div class="quiz-buttons">
                             <?php if ($question_num < $total_questions): ?>
                                 <button type="button" class="next-button" onclick="nextStep(<?php echo $question_num; ?>)"> Next </button>

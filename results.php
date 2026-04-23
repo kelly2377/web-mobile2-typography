@@ -2,11 +2,28 @@
 $currentPage = "Typography";
 include "assets/inc/head.php";
 include('../../../dbConn.php');
+$name_Err = "";
+function test_input($data) {
+    return htmlspecialchars(stripslashes(trim($data)));
+}
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-    $user_name = mysqli_real_escape_string($mysqli, $_POST['user_name']);
-    $quiz_id = intval($_POST['quiz_id']);
-}
+    $user_name = trim($_POST['user_name'] ?? '');
+    $quiz_id = intval($_POST['quiz_id'] ?? 0);
+
+    $user_name = test_input($user_name);
+    if(empty($user_name)){
+        $name_Err = "Name is required!";
+    }elseif(!preg_match("/^[a-zA-Z-' ]*$/", $user_name)){
+            $name_Err = "Only letters and white space allowed";
+    }
+    if(empty($name_Err)){
+        $user_name = mysqli_real_escape_string($mysqli, $user_name);
+    }else{
+        header("Location: quiz.php?quiz_id=$quiz_id&error=name");
+        exit;
+    }
+}  
 
 mysqli_query($mysqli, "INSERT INTO users(name) VALUES ('$user_name')");
 $user_id = mysqli_insert_id($mysqli);
