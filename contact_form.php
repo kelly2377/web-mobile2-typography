@@ -87,5 +87,6 @@ include "assets/inc/head.php";
     include "assets/inc/footer.php";
     ?>
     <script src="assets/js/menu.js"></script>
+    <script src="assets/js/contact_validation.js"></script>
 </body>
 </html>
