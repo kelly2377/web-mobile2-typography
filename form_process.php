@@ -44,7 +44,10 @@
 			$reasonErr = "Reason is required!";
 		} else{
 			$contactReason = test_input($_POST['contactReason']);
-		}
+			
+			if (!preg_match("/^[a-zA-Z-' ]*$/", $contactReason)) {
+				$reasonErr = "Only letters and white space allowed";
+			}}
 
 		if (empty($_POST['email'])){
 			$emailErr = "Email is required!";
@@ -73,7 +76,7 @@
 			$message = test_input($_POST['message']);
 		}
 
-		if ($firstNameErr == "" && $lastNameErr == "" && $emailErr == "" && $phoneNumberErr == "" && $messageErr == ""){
+		if ($firstNameErr == "" && $lastNameErr == "" && $emailErr == "" && $phoneNumberErr == "" && $messageErr == "" && $reasonErr == ""){
 			$statement = $mysqli->prepare("INSERT INTO contactMessages (`firstName`, `lastName`, `email`, `phoneNumber`, `contactReason`, `message`, `date`) VALUES (?, ?, ?, ?, ?, ?,  now())");
 			$statement->bind_param("ssssss", $firstName, $lastName, $email, $phoneNumber, $contactReason, $message);
 			$statement->execute();
