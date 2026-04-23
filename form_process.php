@@ -26,7 +26,7 @@
 			$firstName = test_input($_POST['firstName']);
 
 			if (!preg_match("/^[a-zA-Z-' ]*$/", $firstName)) {
-				$firstNameErr = "Only letters and white space allowed";
+				$firstNameErr = "Only letters, white space, and some special characters (- and ') allowed";
 			}
 		}
 
@@ -36,7 +36,7 @@
 			$lastName = test_input($_POST['lastName']);
 
 			if (!preg_match("/^[a-zA-Z-' ]*$/", $lastName)) {
-				$lastNameErr = "Only letters and white space allowed";
+				$lastNameErr = "Only letters, white space, and some special characters (- and ') allowed";
 			}
 		}
 
@@ -45,9 +45,10 @@
 		} else{
 			$contactReason = test_input($_POST['contactReason']);
 			
-			if (!preg_match("/^[a-zA-Z-' ]*$/", $contactReason)) {
+			if (!preg_match("/^[a-zA-Z ]*$/", $contactReason)) {
 				$reasonErr = "Only letters and white space allowed";
-			}}
+			}
+		}
 
 		if (empty($_POST['email'])){
 			$emailErr = "Email is required!";

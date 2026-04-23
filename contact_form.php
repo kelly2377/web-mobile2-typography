@@ -24,30 +24,30 @@ include "assets/inc/head.php";
                     <p><span>*</span> indicates a required field</p>
                 </section> 
 
-                <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" id="contact-form">
                     <fieldset>  
                         <div class="name">
-                            <label for="firstName">First Name <span>* <?php echo $firstNameErr;?></span></label>
+                            <label for="firstName">First Name <span class="fname-error">* <?php echo $firstNameErr;?></span></label>
                             <input required type="text" name="firstName" id="firstName" value="<?php echo $firstName;?>">
                         
-                            <label for="lastName">Last Name <span>* <?php echo $lastNameErr;?></span></label>
+                            <label for="lastName">Last Name <span class="lname-error">* <?php echo $lastNameErr;?></span></label>
                             <input required type="text" name="lastName" id="lastName" value="<?php echo $lastName;?>">
                         </div>
 
                         <div>
-                            <label for="email">Email <span>* <?php echo $emailErr;?></span></label>
+                            <label for="email">Email <span class="email-error">* <?php echo $emailErr;?></span></label>
                             <input type="email" name="email" id="email" required placeholder="somebody@somewhere.com" value="<?php echo $email;?>">
                         </div>
 
                         <div>
-                            <label for="phoneNumber">Phone Number <span><?php echo $phoneNumberErr;?></span></label>
+                            <label for="phoneNumber">Phone Number <span class="phone-error"><?php echo $phoneNumberErr;?></span></label>
                             <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" minlength=10 maxlength=15 pattern="[0-9]{3}[- ]?[0-9]{3}[- ]?[0-9]{4}" value="<?php echo $phoneNumber;?>" title="Only numbers, (, -, or space allowed">
                         </div>
                         
                     </fieldset>
                     
                     <div class="contact-reason">
-                        <p>Reason for contacting: <span>*</span></p>
+                        <p>Reason for contacting: <span class="reason-error">*</span></p>
 
                         <div>
                             <input type="radio" name="contactReason" id="new" value="New Topic" checked>
@@ -71,7 +71,7 @@ include "assets/inc/head.php";
                     </div>
 
                     <div class="long-text">
-                        <label for="message">Question/Message: <span>* <?php echo $messageErr;?></span></label><br>
+                        <label for="message">Question/Message: <span class="message-error">* <?php echo $messageErr;?></span></label><br>
                         <textarea name="message" id="message" required placeholder="Type here..."><?php echo $message;?></textarea>
                     </div>
 
