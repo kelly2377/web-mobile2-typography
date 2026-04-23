@@ -234,14 +234,14 @@ INSERT INTO answers(question_id,answer,is_correct) VALUES
 (27, 'None of the above', 0),
 
 (28, 'Building a brand identity', 0),
-(28, 'Enhance aestetics', 0),
-(28, 'Both of the above', 0)
+(28, 'Enhance aesthetics', 0),
+(28, 'Both of the above', 0),
 (28, 'Convince the user to donate', 0),
 
 -- quiz 3 multiple choices and correct answers
 (29, 'A font with more than two cases (capital, lower, ...)', 0),
 (29, 'Letters with extra strokes at the end of their edges', 1),
-(29, 'A certification needed to register your font', 0)
+(29, 'A certification needed to register your font', 0),
 (29, 'None of the above', 0),
 
 (30, 'A font that uses serifs', 0),
