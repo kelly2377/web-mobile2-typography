@@ -80,7 +80,7 @@ INSERT INTO questions(quiz_id,question_prompt) VALUES
 (7, 'What must a typeface maintain when conveying a specific mood?'),
 (7, 'In the bad example section, why is the typography considered bad?'),
 (7, 'In the good example section, why is the typography considered good?'),
-(7,'Before deciding a typerface, what is the first step a designer must take?'),
+(7, 'Before deciding a typerface, what is the first step a designer must take?'),
 
 -- quiz 8 questions
 (8, 'Who created the Sabon typeface?'),
@@ -298,7 +298,8 @@ INSERT INTO answers(question_id,answer,is_correct) VALUES
 (39, 'All of the above', 1),
 (39, 'Paula Schere', 0),
 (39, 'Jan Tschihold', 0),
-(39, 'None of the above', 0)
+(39, 'None of the above', 0),
+
 -- quiz 7 multiple choice and correct answers
 (40, 'complexity and different shapes',0),
 (40, 'readability and legibility',1),
@@ -310,7 +311,7 @@ INSERT INTO answers(question_id,answer,is_correct) VALUES
 (41, 'background is too bright and colorful', 0),
 (41, 'All of the above', 0),
 
-(42, 'There are bright colors being used', 0,),
+(42, 'There are bright colors being used', 0),
 (42, 'consistent fonts that match mood and is readable', 1),
 (42, "large image that get the reader's attention", 0),
 (42, 'using different fonts', 0),
