@@ -65,6 +65,7 @@ include "assets/inc/head.php";
                 </div>
             </section>
         </div>
+        <a href="quiz.php?quiz_id=1" class="btn"><button>Take Quiz!</button></a>
     </main>
 
     <!-- footer -->
